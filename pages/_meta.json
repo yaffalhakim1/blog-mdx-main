@@ -1,11 +1,10 @@
 {
   "index": "Introduction",
-  "pwa": "NextJS PWA",
-  "sonner": "Sonner Toast",
+
   "advanced": {
     "display": "hidden"
   },
-
+  "library": "Library",
   "about": {
     "title": "About",
     "type": "page"

@@ -1,10 +1,10 @@
 # Sonner Toast
 
-Progressive Web Apps (PWAs) are web applications that provide a native app-like experience to users. If you're building a Next.js website, adding PWA support can improve the user experience and engagement.
+![Hello](/sonner.png)
 
-With the next-pwa plugin, it's easy to add PWA support to your website. In this tutorial, we'll cover everything from installing the plugin and configuring the PWA manifest to registering the service worker and testing the PWA on different devices. By the end of this tutorial, you'll have a fully functional PWA that your users can install on their devices and use offline. Let's get started!
+User always feel not comfortable when they see a blank page when they request something to backend. That's when toast come in. It give user a feedback that their request has been sent to backend. It also give user a feedback that their request has been success or failed.
 
-This tutorial use [sonner](https://sonner.emilkowal.ski/) by [https://github.com/emilkowalski](https://github.com/emilkowalski).
+This tutorial use [Sonner](https://sonner.emilkowal.ski/) by [https://github.com/emilkowalski](https://github.com/emilkowalski).
 
 ## Installing
 
@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 There are several `types` of toast that you can use based on your need. Personally, i use `success` and `error` that you can take a look at [Types](https://github.com/emilkowalski/sonner#types).
 
-`richColors` is a prop that you can use to change the color of toast. `closeButton` is a prop that you can use to show close button in toast.
+`richColors` is a prop that you can use to give the toast a color based on its type. `closeButton` is a prop that you can use to show close button in toast.
 
 this is just optional, you can use it or not.
 
@@ -48,9 +48,9 @@ I use this toast when user failed request something to backend.
 toast.error("Event has not been created");
 ```
 
-## Uses Example
+## Example
 
-One example i use this toast is when user create an event. If the event has been created, i will show success toast. If the event has not been created, i will show error toast like this:
+One example i use with this toast is when user create an event. If the event has been created, i will show success toast. If the event has not been created, i will show error toast like this:
 
 ```js copy
 async function handleAddSomething() {

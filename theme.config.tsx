@@ -3,6 +3,7 @@ import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
   logo: <span>Yafi Alhakim</span>,
+  faviconGlyph: "💻",
   project: {
     link: "https://github.com/yaffalhakim1/blog-mdx-main",
   },
@@ -15,6 +16,7 @@ const config: DocsThemeConfig = {
       titleTemplate: "%s – Yafi Alhakim",
     };
   },
+  primaryHue: 200,
 };
 
 export default config;
