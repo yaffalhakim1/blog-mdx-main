@@ -1,0 +1,15 @@
+{
+  "index": "Introduction",
+  "pwa": "NextJS PWA",
+  "advanced": "Advanced (A Folder)",
+  "about": {
+    "title": "About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://yafialhakim.vercel.app",
+    "newWindow": true
+  }
+}
