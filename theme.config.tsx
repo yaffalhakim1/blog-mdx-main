@@ -16,7 +16,6 @@ const config: DocsThemeConfig = {
       titleTemplate: "%s – Yafi Alhakim",
     };
   },
-  primaryHue: 200,
 };
 
 export default config;
