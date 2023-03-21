@@ -1,0 +1,81 @@
+# Sonner Toast
+
+Progressive Web Apps (PWAs) are web applications that provide a native app-like experience to users. If you're building a Next.js website, adding PWA support can improve the user experience and engagement.
+
+With the next-pwa plugin, it's easy to add PWA support to your website. In this tutorial, we'll cover everything from installing the plugin and configuring the PWA manifest to registering the service worker and testing the PWA on different devices. By the end of this tutorial, you'll have a fully functional PWA that your users can install on their devices and use offline. Let's get started!
+
+This tutorial use [sonner](https://sonner.emilkowal.ski/) by [https://github.com/emilkowalski](https://github.com/emilkowalski).
+
+## Installing
+
+```js copy
+npm install sonner
+```
+
+## Usage
+
+Add `<Toaster />` in your `_app.tsx` or `_app.js` file besides `<Component {...pageProps} />`
+
+```js copy
+export default function App({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <Component {...pageProps} /> <Toaster richColors closeButton />
+    </>
+  );
+}
+```
+
+There are several `types` of toast that you can use based on your need. Personally, i use `success` and `error` that you can take a look at [Types](https://github.com/emilkowalski/sonner#types).
+
+`richColors` is a prop that you can use to change the color of toast. `closeButton` is a prop that you can use to show close button in toast.
+
+this is just optional, you can use it or not.
+
+### Success
+
+I use this toast when user successfully request something to backend.
+
+```js copy
+toast.success("Event has been created");
+```
+
+### Error
+
+I use this toast when user failed request something to backend.
+
+```js copy
+toast.error("Event has not been created");
+```
+
+## Uses Example
+
+One example i use this toast is when user create an event. If the event has been created, i will show success toast. If the event has not been created, i will show error toast like this:
+
+```js copy
+async function handleAddSomething() {
+    const options = {
+     YOUR_OPTION_FOR_POST
+    };
+    axios
+      .post("YOUR_API", options)
+      .then((postFileReq) => {
+        onSuccess();
+        setLoading(false);
+        toast.success("Event has been created");
+      })
+      .catch((error) => {
+        const err = error as AxiosError;
+        if (err.response?.status === 400) {
+           toast.error("Event has not been created");
+        } else {
+          toast.error("Event has not been created");
+        }
+        setLoading(false);
+             });
+  }
+```
+
+## Finish
+
+After you finish all the step above you are all set! Toast will show up when you create a new request.
