@@ -1,8 +1,7 @@
 {
   "index": "Introduction",
-  "sonner": "Sonner Toast",
-
   "pwa": "NextJS PWA",
+  "sonner": "Sonner Toast",
   "about": {
     "title": "About",
     "type": "page"
