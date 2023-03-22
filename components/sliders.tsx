@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Sliders() {
   return (
-    <div className="flex items-center gap-4 mt-8 h-6">
+    <div className="flex items-center gap-4 mt-4 h-6">
       <input
         type="range"
         min="0"
@@ -14,10 +14,10 @@ export default function Sliders() {
             "--nextra-primary-hue",
             hue + "deg"
           );
-          document.getElementById("test-theme-hue").innerText = hue;
+          // document.getElementById("test-theme-hue").innerText = hue;
         }}
       />
-      <code id="test-theme-hue" className="text-sm text-transparent"></code>
+      {/* <code id="test-theme-hue" className="text-sm text-transparent"></code> */}
     </div>
   );
 }
