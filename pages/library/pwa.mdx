@@ -29,7 +29,7 @@ Config the PWA within your `next.config.js`
 const runtimeCaching = require("next-pwa/cache");
 const withPWA = require("next-pwa")({
   dest: "public",
-  disable: process.env.NODE_ENV === "development", //i usually do this because i don't need to change anything in development
+  disable: process.env.NODE_ENV === "development", //i usually do this because i don't need to change any pwa settings in development
 });
 
 module.exports = withPWA({
@@ -44,7 +44,7 @@ After you build using `next build` this will generate `public`:`workbox-*,js` an
 
 ## Add Manifest file
 
-Create a manifest.json file in your `public` folder. Make sure all the files are in `public` folder
+Create a `manifest.json` file in your `public` folder. Make sure all the files are in `public` folder
 
 ```js copy
 {

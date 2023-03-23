@@ -9,7 +9,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: "https://github.com/yaffalhakim1/blog-mdx-main",
   footer: {
-    text: "Build with Next.js v13 appDir and Nextra by Yafi Alhakim",
+    text: "Build with Nextra by Yafi Alhakim",
   },
   useNextSeoProps() {
     return {
