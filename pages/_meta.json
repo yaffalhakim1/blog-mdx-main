@@ -4,6 +4,7 @@
     "display": "hidden"
   },
   "library": "Library",
+  "nextjs": "NextJS",
   "about": {
     "title": "About",
     "type": "page"
