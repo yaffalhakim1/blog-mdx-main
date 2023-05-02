@@ -1,23 +1,14 @@
-<!-- # Nextra Docs Template
+# My Blog
+Welcome to my blog on GitHub! This is a blog built with Nextra, a static site generator for Next.js that makes it easy to create Markdown-based blogs. The UI is styled with Tailwind CSS, a utility-first CSS framework that makes it easy to create responsive and customizable designs.
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+## Features
+Built with Nextra, a static site generator for Next.js that makes it easy to create Markdown-based blogs.
+UI styled with Tailwind CSS, a utility-first CSS framework that makes it easy to create responsive and customizable designs.
+Getting Started
+To run this blog on your local machine, you need to have Node.js installed. Once you have Node.js installed, you can follow these steps:
 
-[**Live Demo →**](https://nextra-docs-template.vercel.app)
-
-[![](.github/screenshot.png)](https://nextra-docs-template.vercel.app)
-
-## Quick Start
-
-Click the button to clone this repository and deploy it on Vercel:
-
-[![](https://vercel.com/button)](https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2Fshuding%2Fnextra-docs-template&showOptionalTeamCreation=false)
-
-## Local Development
-
-First, run `pnpm i` to install the dependencies.
-
-Then, run `pnpm dev` to start the development server and visit localhost:3000.
-
-## License
-
-This project is licensed under the MIT License. -->
+## Clone this repository.
+Navigate to the root directory of the project in your terminal.
+Run npm install to install the dependencies.
+Run npm run dev to start the development server.
+Open your browser and navigate to http://localhost:3000.
